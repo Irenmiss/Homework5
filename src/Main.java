@@ -48,8 +48,8 @@ public class Main {
         int savingsInMonth1 = 29000;
         int totalSavingsInYear1 = 0;
         for (int h = 1; h <= 12; h ++) {
-            totalSavingsInYear1 = totalSavingsInYear1 + (totalSavingsInYear1 / 100);
             totalSavingsInYear1 = totalSavingsInYear1 + savingsInMonth1;
+            totalSavingsInYear1 = totalSavingsInYear1 + (totalSavingsInYear1 / 100);
             System.out.println("Месяц " + h + ", сумма накоплений равна " + totalSavingsInYear1 + " рублей.");
         }
     }
